@@ -49,5 +49,10 @@ int main() {
     double distance = p1.distanceTo(p2);
     std::cout << "distance " << distance << std::endl;
 
+    double midpointX = (p1.getX() + p2.getX()) / 2.0;
+    double midpointY = (p1.getY() + p2.getY()) / 2.0;
+    Point midpoint(midpointX, midpointY);
+    std::cout << "midpoint = " << midpoint.toString() << std::endl;
+
     return 0;
 }
